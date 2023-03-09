@@ -1,0 +1,120 @@
+body {
+	overflow-x: hidden;
+}
+
+.header-nav {
+	font-size: 1.3rem;
+	text-align: right;
+	background: #0e1111;
+	color: #FFF;
+	padding: 10px 0;
+}
+
+.navbar {
+	background: #FFF !important;
+	display: flex !important;
+	align-items: center;
+}
+.navbar .navbar-brand figure {
+	margin-bottom: 0px;
+}
+.navbar .navbar-brand img {
+	width: 170px;
+}
+
+.home {
+	position: relative;
+	height: 100vh;
+}
+.home #intro_video {
+  	position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: -1	;
+}
+.home .content {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+.home .content h1, .home .content h2 {
+	color: #FFF;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.home .content button {
+	font-size: 32px;
+	border: none;
+	border-radius: 10px;
+	background: rgb(0,42,89);
+	background: linear-gradient(0deg, rgba(0,42,89,1) 0%, rgba(0,73,152,1) 65%, rgba(0,122,255,1) 100%);
+	padding: 5px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 20px 1px #262626;
+}
+
+.product-details {
+	padding: 7% 0;
+}
+.product-details .row {
+	align-items: center;
+	margin-bottom: 7%;
+}
+.product-details img {
+	width: 100%;
+}
+
+.home-control {
+	position: relative;
+	height: 100vh;
+}
+.home-control #control_video {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: -1;
+}
+.home-control .content {
+	position: absolute;
+	left: 69vw;
+    top: 45%;
+	max-width: 30%;
+	text-align: center;
+}
+.home-control .content h2 {
+	font-size: 50px;
+}
+.home-control .content p {
+	padding: 10px 5% 0 5%;
+}
+
+.copyright {
+	text-align: center;
+	background: #0e1111;
+	color: #FFF;
+	padding: 5px 0;
+}
+.copyright p {
+	margin: 0;
+}
