@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<head>
-	<title>SONY - Playstation 5</title>
-</head>
-
-<body>
-
   <?php include 'header.php';?>
 
   <div class="home">

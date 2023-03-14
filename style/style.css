@@ -8,6 +8,7 @@ body {
 	background: #0e1111;
 	color: #FFF;
 	padding: 10px 0;
+	border-bottom: 5px solid #006FCD;
 }
 
 .navbar {
@@ -109,6 +110,35 @@ body {
 	padding: 10px 5% 0 5%;
 }
 
+footer {
+	padding: 5% 0;
+	background: #141414;
+	color: #FFF;
+}
+footer .logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+footer img {
+	filter: invert(99%) sepia(94%) saturate(0%) hue-rotate(253deg) brightness(106%) contrast(100%);
+	width: 190px;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+footer .social-media {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+footer .social-media i {
+	padding: 5px;
+}
 .copyright {
 	text-align: center;
 	background: #0e1111;
