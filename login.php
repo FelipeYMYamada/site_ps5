@@ -6,7 +6,7 @@
 	<title>Login</title>
 </head>
 <body>
-	<form method="post" action="authentication.php" id="login-form" name="login-form">
+	<form method="post" action="./php/authentication.php" id="login-form" name="login-form">
 		<label for="email">Email</label>
 		<input type="email" name="email" required>
 

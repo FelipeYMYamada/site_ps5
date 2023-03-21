@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<?php include 'session_validation.php' ?>
+	<?php include './php/session_validation.php' ?>
 	<h1>dasdasdsadasda</h1>
 	
 </body>

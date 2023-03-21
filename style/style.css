@@ -110,6 +110,134 @@ body {
 	padding: 10px 5% 0 5%;
 }
 
+.profile-container {
+	display: flex;
+	min-height: 100vh;
+	background: rgb(0,8,17);
+	background: linear-gradient(0deg, rgba(0,8,17,1) 0%, rgba(0,39,80,1) 37%, rgba(1,55,113,1) 72%, rgba(0,72,152,1) 100%);
+}
+.profile-container .side-navbar {
+	transition: all 0.3s;
+}
+.side-menu-closed .header,
+.side-menu-closed .profile-detail,
+.side-menu-closed nav .menu a span,
+hr {
+	display: none !important;
+	text-align: center;
+}
+.side-menu-closed nav {
+	width: 65px !important;
+}
+.side-menu-closed nav .menu a i {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.side-menu-closed .icon-open-menu {
+	display: block !important;
+	text-align: center;
+}
+.side-menu-closed .icon-open-menu i {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.profile-container nav .icon-open-menu {
+	color: #FFF;
+	display: none;
+}
+.profile-container nav {
+	display: inline-block;
+	background: #141414 !important;
+	height: 100vh;
+	width: 250px;
+}
+.profile-container nav .header {
+	color: #FFF;
+	padding: 20px 20px 0;
+	position: relative;
+}
+.profile-container nav .header i {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	cursor: pointer;
+}
+.profile-container .profile-detail {
+	margin: 10% 0;
+	padding: 20px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+.profile-container .profile-detail .fa-stack {
+	display: block;
+	text-align: center;
+	margin: auto;
+	font-size: 40px;
+}
+.profile-container .profile-detail .fa-user {
+	color: #FFF;
+}
+.profile-container .profile-detail #user_s_name {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	margin-top: 20px;
+}
+.profile-container .profile-detail #user_s_name span {
+	display: block;
+}
+.profile-container .profile-detail .profile-action {
+	display: flex;
+    justify-content: center;
+    margin: 12px 0;
+}
+.profile-container .profile-detail .profile-action a {
+	display: inline-block;
+	width: auto;
+	font-size: 12px;
+	margin: 0 5px;
+}
+.profile-container .profile-detail .profile-action a:hover {
+	background: #6c757d;
+	border-radius: 10%;
+}
+.profile-container .profile-detail .profile-action a i {
+	margin-right: 2px;
+}
+.profile-container ul {
+	list-style-type: none;
+	padding: 0;
+}
+.profile-container ul li {
+	padding: 3px;
+}
+.profile-container ul li:hover {
+	background: #6c757d;
+}
+.profile-container a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px;
+}
+.profile-container .menu i {
+	color: #FFF !important;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.profile-content {
+	display: block;
+	background-color: rgb(0, 0, 0, .1);
+	width: 100%;
+	padding: 5%;
+	margin: 1.5%;
+	border-radius: 3%;
+}
+
 footer {
 	padding: 5% 0;
 	background: #141414;
