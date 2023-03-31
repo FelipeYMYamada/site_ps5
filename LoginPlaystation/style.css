@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.retangulo-preto {
+  position: absolute;
+  top: 120px;
+  left: 35%;
+  height: 56px;
+  width: 400px;
+  background-color: black;
+}
+
+.logo-sony {
+  position: absolute;
+  width: 120px;
+  top: 0px;
+  left: 35%;
+}
+
+.iconx {
+  position: absolute;
+  /*Mudar a cor white por transparent para não mostrar o X e colocar o width/height no HTML caso não mude de tamanho pelo CSS*/
+  opacity: 1;
+  background-color: white;
+  right: 5px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-playstation {
+  position: absolute;
+  width: 120px;
+  top: 176px;
+  left: 35%;
+}
+
+.retangulo-branco {
+  position: absolute;
+  top: 272px;
+  left: 35%;
+  width: 25rem;
+  height: 400px;
+  background-color: white;
+}
+.frase {
+  margin: 10px 35px;
+  font-size: 13px;
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info {
+  color: #3e66d5;
+  text-decoration: none;
+}
+
+input[type="email"] {
+  position: absolute;
+  top: 340px;
+  left: 38%;
+  size: 30;
+  width: 300px;
+  height: 35px;
+  border: 1px solid lightgray;
+}
+
+.botaonext {
+  position: absolute;
+  top: 390px;
+  left: 38%;
+  width: 300px;
+  height: 35px;
+  opacity: .3;
+  background-color: #3e66d5;
+  border: none;
+  cursor: pointer;
+}
+
+.next {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.sessao {
+  position: absolute;
+  color: #3e66d5;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  top: 450px;
+  left: 38%;
+}
+
+.botaocriar {
+  position: absolute;
+  top: 500px;
+  left: 38%;
+  width: 300px;
+  height: 35px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.criarconta {
+  top: 35%;
+  left: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.ajuda{
+  position: absolute;
+  font-size: 12px;
+  top: 41rem;
+  left: 40.5rem;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #0000008C;
+}
