@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
+	if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['name']) == true)){
 	    header('Location: login.php');
 	}
 ?>

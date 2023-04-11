@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;1,700&display=swap');
+
 body {
 	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Kanit', sans-serif;
+}
+p, a, span {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+.bg-blue-dark-fade {
+	background: rgb(0,8,17);
+	background: linear-gradient(0deg, rgba(0,8,17,1) 0%, rgba(0,44,91,1) 49%);
+}
+.fullvh {
+	height: 100vh;
 }
 
 .header-nav {
@@ -21,6 +40,12 @@ body {
 }
 .navbar .navbar-brand img {
 	width: 170px;
+}
+.navbar .my-profile {
+	background: #0d6efd;
+	color: #FFF;
+	border-radius: 20px;
+	margin-left: 10px;
 }
 
 .home {
@@ -64,6 +89,55 @@ body {
 	padding: 5px 25px;
 	color: #FFF;
 	box-shadow: 1px 1px 20px 1px #262626;
+}
+
+.home-games {
+	padding: 5% 0;
+	text-align: center;
+}
+.home-games h1 {
+	color: #FFF;
+	margin-bottom: 5%;
+}
+.home-games .carousel-inner {
+	padding: 1em;
+}
+.home-games .card {
+	height: 530px;
+  	margin: 0 0.5em;
+  	box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  	border: none;
+  	background: #141414;
+  	padding: 5px;
+}
+.home-games .card:hover {
+	box-shadow: 0px 0px 15px 2px #FFF;
+}
+.home-games .card img {
+	height: 400px;
+}
+.home-games .card h4,
+.home-games .card p {
+	color: #FFF;
+}
+.home-games .carousel-control-prev,
+.home-games .carousel-control-next {
+	background-color: #e1e1e1;
+	width: 6vh;
+	height: 6vh;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.home-games .card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-games .card img {
+    max-height: 100%;
 }
 
 .product-details {
@@ -112,9 +186,6 @@ body {
 
 .profile-container {
 	display: flex;
-	min-height: 100vh;
-	background: rgb(0,8,17);
-	background: linear-gradient(0deg, rgba(0,8,17,1) 0%, rgba(0,39,80,1) 37%, rgba(1,55,113,1) 72%, rgba(0,72,152,1) 100%);
 }
 .profile-container .side-navbar {
 	transition: all 0.3s;
@@ -238,6 +309,126 @@ hr {
 	border-radius: 3%;
 }
 
+.login {
+	background: url("../img/login.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.login .login-card {
+	display: block;
+	background: #FFF;
+	width: 400px;
+	padding: 40px 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 1px #c2c2c2;
+}
+.login .login-card .btn {
+	background: #E6E6E6;
+	width: 100%;
+	font-weight: 500;
+	color: #595959;
+}
+.login .login-card .btn:hover {
+	background: #0d6efd;
+	color: #FFF;
+}
+
+.signup-bd {
+	position: relative;
+}
+.signup-bd #message {
+	display: none;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border:  1px solid rgb(255, 0, 0);
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFF;
+	background: rgb(255, 0, 0, 0.4);
+}
+.signup {
+	padding: 5% 0;
+	color: #FFF;
+}
+.signup h1 {
+	margin-bottom: 2%;
+}
+.signup .form-group {
+	margin-bottom: 15px;
+	padding: 0 20px;
+}
+.signup .password-confirmation {
+	margin-top: 30px;
+	padding: 20px;
+	border: 1px solid #FFF;
+	border-radius: 20px;
+}
+.signup .password-confirmation .form-group {
+	padding: 0;
+	position: relative;
+}
+.signup .password-confirmation .form-group i {
+	position: absolute;
+	right: 15px;
+	bottom: 12px;
+	color: #000;
+}
+.signup .btn {
+	background: rgb(255, 255, 255, .8);
+	margin-top: 30px;
+	margin-left: 20px;
+	padding: 10px 30px;
+	color: #0d6efd;
+	font-size: 18px;
+	font-weight: 500;
+}
+.signup .btn:hover {
+	background: #0d6efd;
+	color: #FFF;
+}
+.signup dialog {
+	position: absolute;
+	top: 50%;
+	z-index:999999 !important;
+}
+
+.signup-popover {
+	display: none;
+	position: absolute;
+	top: 0;
+	background: rgb(0, 0, 0, .6);
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+}
+.signup-popover .card {
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+    transform: translate(-50%, -35%);
+    padding: 40px 20px;
+    box-shadow: 1px 1px 30px 10px #000;
+}
+.signup-popover .card i {
+	font-size: 65px;
+	margin-bottom: 20px;
+	color: #0d6efd;
+}
+.signup-popover .card .btn {
+	background: #0d6efd;
+	color: #FFF;
+	font-weight: 500;
+}
+
 footer {
 	padding: 5% 0;
 	background: #141414;
@@ -275,4 +466,21 @@ footer .social-media i {
 }
 .copyright p {
 	margin: 0;
+}
+
+@media (min-width: 768px) {
+	.home-games .carousel-item {
+		margin-right: 0;
+		flex: 0 0 33.333333%;
+		display: block;
+	}
+	.home-games .carousel-inner {
+		display: flex;
+	}
+}
+
+@media (max-width: 767px) {
+  .home-games .card .img-wrapper {
+    height: 17em;
+  }
 }

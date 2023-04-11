@@ -10,33 +10,18 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"crossorigin="anonymous"></script>
 	<script
-  	src="https://code.jquery.com/jquery-3.6.4.min.js"
+	src="https://code.jquery.com/jquery-3.6.4.min.js"
 	integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
 	crossorigin="anonymous"></script>
-	<title>PS5 - Login</title>
+	<title>PS5 - JOGOS</title>
 </head>
 <body>
 	<?php include 'header.php';?>
-
-	<div class="login fullvh">
-		<div class="login-card">
-			<form method="POST" action="./php/authentication.php" id="login-form" name="login-form">
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input id="email" name="email" type="email" class="form-control" required>
-				</div><!-- /.form-group -->
-
-				<div class="form-group mb-4">
-					<label for="password">Senha</label>
-					<input id="password" name="password" type="password" class="form-control" required>
-				</div><!-- /.form-group -->
-
-				<input type="submit" value="Login" class="btn mb-2" />
-			</form>
-			<a href="signup.php" class="btn">Cadastrar</a>
-		</div><!-- /. login-card -->
-	</div><!-- /.login -->
-
+	<div class="games fullvh bg-blue-dark-fade">
+		<div class="container">
+			<h1>JOGOS</h1>
+		</div><!-- /.container -->		
+	</div><!-- /.games .fullvh .bg-blue-dark-fade -->
 	<?php include 'footer.php';?>
 </body>
 </html>

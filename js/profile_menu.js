@@ -4,4 +4,4 @@ $("#close-menu").click(function(event) {
 
 $("#open-menu").click(function(event) {
 	$("#side-navbar").removeClass("side-menu-closed");
-})
+});

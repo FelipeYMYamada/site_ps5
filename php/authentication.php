@@ -5,8 +5,8 @@
 	session_start();
 
 	$email = $_POST['email'];
-	$senha = $_POST['senha'];
-	$query = "SELECT id, name, email  FROM USER WHERE email = '".$email."' AND pssw = '".$senha."'";
+	$password = $_POST['password'];
+	$query = "SELECT id, name, email FROM USER WHERE email = '".$email."' AND pssw = '".$password."';";
 	$result = mysqli_query($conn, $query);
 	
 	if( mysqli_num_rows($result) > 0)
@@ -20,8 +20,9 @@
 	}
 	else
 	{
-		unset ($_SESSION['login']);
-  		unset ($_SESSION['senha']);
+		unset ($_SESSION['id']);
+  		unset ($_SESSION['name']);
+  		unset ($_SESSION['email']);
   		echo 'usuario nao encontrado';
 	}
 
