@@ -36,8 +36,8 @@
     <div class="container">
       <?php 
 
-        include './php/products.php';
-        AllProductsHtml();
+        include './php/games.php';
+        AllGamesHtml();
 
       ?>
     </div><!-- /.container -->

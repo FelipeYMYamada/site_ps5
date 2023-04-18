@@ -18,7 +18,7 @@ p, a, span {
 	background: linear-gradient(0deg, rgba(0,8,17,1) 0%, rgba(0,44,91,1) 49%);
 }
 .fullvh {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .header-nav {
@@ -427,6 +427,54 @@ hr {
 	background: #0d6efd;
 	color: #FFF;
 	font-weight: 500;
+}
+
+.games-header {
+	background: url("../img/games.jpg");
+	background-size: cover;
+	background-position: center;
+	display:table;
+    width:100%;
+    height: 300px;
+	text-align: center;	
+}
+.games-header h1 {	
+	display: table-cell;
+	vertical-align: middle;
+	background: rgb(0, 0, 0, .7);
+	font-size: 65px;
+	color: #FFF;
+}
+.games-category-container {
+	padding: 3% 0;
+}
+.games-category-container h1 {
+	color: #FFF;
+}
+.games-category-container .card-col {
+	display: block;
+    width: auto;
+}
+.games-category-container .card-col:hover {
+	padding: 10px;
+	border: 2px solid #0d6efd;
+	border-radius: 10px;
+}
+.games-category-container .card-col:hover .card {
+	box-shadow: 0 0 10px .1px #FFF;
+}
+.games-category-container .card {
+	width: 300px;
+	height: 420px;
+	padding: 5px;
+	background: rgb(0, 0, 0, .6);
+	border-radius: 10px;
+	color: #FFF;
+}
+.games-category-container .card img {
+	width: 100%;
+	height: 70%;
+	border-radius: 10px;
 }
 
 footer {

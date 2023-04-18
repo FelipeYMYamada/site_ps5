@@ -18,8 +18,24 @@
 <body>
 	<?php include 'header.php';?>
 	<div class="games fullvh bg-blue-dark-fade">
-		<div class="container">
+		<div class="games-header">
 			<h1>JOGOS</h1>
+		</div><!-- /.games-header -->
+		
+		<div class="container">
+			<?php 
+
+		        include './php/games.php';
+		        $result = GetAllCategories();
+		        $list_size = mysqli_num_rows($result);
+
+		        if($list_size > 0) {
+		        	while($row = $result->fetch_assoc()) {
+		        		PrintCategorySection($row['name']);
+		        	}
+		        }
+
+		    ?>
 		</div><!-- /.container -->		
 	</div><!-- /.games .fullvh .bg-blue-dark-fade -->
 	<?php include 'footer.php';?>
