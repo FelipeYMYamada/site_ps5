@@ -51,13 +51,15 @@
 
 			while($row = $result->fetch_assoc()) {
 				echo '<div class="card-col">'.
-						'<div class="card">'.
-							'<img class="d-block" src="'.$row['img_url'].'">'.
-							'<div class="card-body">'.
-								'<h3>'.$row['name'].'</h3>'.
-								'<p class="card-text">'.$row['description'].'</p>'.
+						'<a href="game.php?game='.$row['id'].'">'.
+							'<div class="card">'.
+								'<img class="d-block" src="'.$row['img_url'].'">'.
+								'<div class="card-body">'.
+									'<h3>'.$row['name'].'</h3>'.
+									'<p class="card-text">'.$row['description'].'</p>'.
+								'</div>'.
 							'</div>'.
-						'</div>'.
+						'</a>'.
 					 '</div>';
 			}
 			echo '</div></div>';
@@ -81,11 +83,13 @@
 					echo '<div class="carousel-item">';
 				}
 				echo '<div class="card">'.
-						'<img class="d-block w-100" src="'.$row['img_url'].'">'.
-						'<div class="card-body">'.
-							'<h4 class="card-title">'.$row['name'].'</h4>'.
-							'<p class="card-text">'.$row['description'].'</p>'.
-						'</div>'.
+						'<a href="game.php?game='.$row['id'].'">'.
+							'<img class="d-block w-100" src="'.$row['img_url'].'">'.
+							'<div class="card-body">'.
+								'<h4 class="card-title">'.$row['name'].'</h4>'.
+								'<p class="card-text">'.$row['description'].'</p>'.
+							'</div>'.
+						'</a>'.
 					 '</div>'.
 				'</div>';
 				$first = false;

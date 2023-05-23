@@ -27,34 +27,34 @@
 			<form id="signup-form" name="signup-form">
 				<div class="form-group">
 					<label for="fullname">Nome completo</label>
-					<input id="fullname" name="fullname" type="text" class="form-control" required>
+					<input id="fullname" name="fullname" type="text" class="form-control" required maxlength="150">
 				</div><!-- /.form-group -->
 
 				<div class="form-group">
 					<label for="cpf">CPF</label>
-					<input id="cpf" name="cpf" type="text" class="form-control" required>
+					<input id="cpf" name="cpf" type="text" class="form-control" required maxlength="12">
 				</div><!-- /.form-group -->
 
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input id="email" name="email" type="email" class="form-control" required>
+					<input id="email" name="email" type="email" class="form-control" required maxlength="120">
 				</div><!-- /.form-group -->
 
 				<div class="form-group">
 					<label for="phonenumber">Telefone</label>
-					<input id="phonenumber" name="phonenumber" type="text" class="form-control" required>
+					<input id="phonenumber" name="phonenumber" type="text" class="form-control" required maxlength="14">
 				</div><!-- /.form-group -->
 
 				<section class="password-confirmation">
 					<div class="form-group">
 						<label for="password_inp">Senha</label>
-						<input id="password_inp" name="password" type="password" class="form-control" required>
+						<input id="password_inp" name="password" type="password" class="form-control" required maxlength="120">
 						<i class="fas fa-eye" id="password" tabindex="0"></i>
 					</div><!-- /.form-group -->
 
 					<div class="form-group">
 						<label for="password2_inp">Confirmar Senha</label>
-						<input id="password2_inp" name="password2" type="password" class="form-control" required>
+						<input id="password2_inp" name="password2" type="password" class="form-control" required maxlength="120">
 						<i class="fas fa-eye" id="password2" tabindex="0"></i>
 					</div><!-- /.form-group -->
 				</section><!-- /.password-confirmation -->

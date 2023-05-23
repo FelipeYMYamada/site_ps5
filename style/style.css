@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 p, a, span {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
+	text-decoration: none;
 }
 .bg-blue-dark-fade {
 	background: rgb(0,8,17);
@@ -475,6 +476,68 @@ hr {
 	width: 100%;
 	height: 70%;
 	border-radius: 10px;
+}
+
+.game-pg-container {
+	padding: 7% 0;
+}
+.game-pg-container h1 {
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+}
+.game-pg-container .game-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.game-pg-container .game-row img {
+	display: block;
+	width: 500px;
+}
+.game-pg-container .game-row .game-details {
+	display: block;
+	padding: 3%;
+}
+.game-pg-container .game-row .game-details p {
+	color: #FFF;
+	max-width: 450px;
+	font-size: 20px;
+}
+.game-pg-container .game-row .game-details span {
+	color: #FFF;
+	margin-top: 30px;
+	max-width: 300px;
+	font-size: 25px;
+}
+.game-pg-container .game-row .game-details span,
+.game-pg-container .game-row .game-details button {
+	display: block;
+}
+.game-pg-container .game-row .game-details button {
+	margin-top: 15px;
+	font-size: 20px;
+	border-radius: 10px;
+	border:  none;
+	background: #1a94ff;
+	color: #FFF;
+	padding: 5px 15px;
+}
+.game-not-found {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #FFF;
+}
+.game-not-found p {
+	font-size: 40px;
+	font-weight: 600;
+}
+.game-not-found img {
+	width: 200px;
 }
 
 footer {
