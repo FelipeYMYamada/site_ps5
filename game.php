@@ -27,5 +27,7 @@
 	</div><!-- /.fullvh .bg-blue-dark-fade -->
 	
 	<?php include 'footer.php';?>
+
+	<script type="text/javascript" src="./js/buy.js"></script>
 </body>
 </html>

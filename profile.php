@@ -19,7 +19,7 @@
 	<?php include './php/session_validation.php'; ?>
 	<?php include 'header.php'; ?>
 
-	<div class="profile-container bg-blue-dark-fade fullvh">
+	<div class="profile-container light-bg fullvh">
 		<div id="side-navbar" class="side-navbar side-menu-closed">
 			<nav role="navigation">
 				<div class="icon-open-menu">

@@ -19,7 +19,7 @@
 			     			'<p><b>Descrição:</b></p>'.
 			     			'<p>'.$row['description'].'</p>'.
 			     			'<span><b>R$ </b>'.$row['price'].'</span>'.
-			     			'<button><i class="fa-solid fa-cart-shopping"></i> COMPRAR</button>'.
+			     			'<button id="buy-product"><i class="fa-solid fa-cart-shopping"></i> COMPRAR</button>'.
 			     		'</div>'.
 			     	'</div>'.
 			     '</div>';

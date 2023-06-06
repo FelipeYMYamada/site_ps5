@@ -1,8 +1,10 @@
 <?php 
 	include 'db_connection.php';
 	$conn = OpenCon();
-
-	session_start();
+	
+	if (session_status() == PHP_SESSION_NONE) {
+		session_start();
+	}
 
 	$email = $_POST['email'];
 	$password = $_POST['password'];
@@ -16,14 +18,15 @@
 		$_SESSION['id'] = $row['id'];
 		$_SESSION['name'] = $row['name'];
 		$_SESSION['email'] = $email;
-		header('Location: ../profile.php');
+
+		echo true;
 	}
 	else
 	{
 		unset ($_SESSION['id']);
   		unset ($_SESSION['name']);
   		unset ($_SESSION['email']);
-  		echo 'usuario nao encontrado';
+  		echo false;
 	}
 
 	CloseCon($conn);

@@ -35,7 +35,7 @@
             } else {
               echo '<a class="nav-link" href="login.php">Login</a>';
             }
-          ?>            
+          ?>
         </li>
       </ul>
     </div>

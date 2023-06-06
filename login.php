@@ -20,7 +20,8 @@
 
 	<div class="login fullvh">
 		<div class="login-card">
-			<form method="POST" action="./php/authentication.php" id="login-form" name="login-form">
+			<span id="message"></span>
+			<form id="login-form" name="login-form">
 				<div class="form-group">
 					<label for="email">Email</label>
 					<input id="email" name="email" type="email" class="form-control" required>
@@ -31,12 +32,13 @@
 					<input id="password" name="password" type="password" class="form-control" required>
 				</div><!-- /.form-group -->
 
-				<input type="submit" value="Login" class="btn mb-2" />
+				<input id="login" value="Login" class="btn mb-2" />
 			</form>
 			<a href="signup.php" class="btn">Cadastrar</a>
 		</div><!-- /. login-card -->
 	</div><!-- /.login -->
 
 	<?php include 'footer.php';?>
+	<script type="text/javascript" src="./js/signin.js"></script>
 </body>
 </html>

@@ -18,6 +18,9 @@ p, a, span {
 	background: rgb(0,8,17);
 	background: linear-gradient(0deg, rgba(0,8,17,1) 0%, rgba(0,44,91,1) 49%);
 }
+.light-bg {
+	background: #fafafa;
+}
 .fullvh {
 	min-height: 100vh;
 }
@@ -303,11 +306,41 @@ hr {
 }
 .profile-content {
 	display: block;
-	background-color: rgb(0, 0, 0, .1);
 	width: 100%;
 	padding: 5%;
 	margin: 1.5%;
 	border-radius: 3%;
+}
+.prf-card {
+	display: block;
+	padding: 20px;
+	width: auto;
+	text-align: center;
+}
+.prf-links {
+	margin-top: 30px;
+}
+.prf-link-card {
+	display: block;
+	text-align: center;
+	padding: 50px 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 1px #D9D9D9;
+}
+.prf-link-card:hover {
+	box-shadow: 0px 0px 15px 1px #b4d1fe;		
+}
+.prf-link-card i {
+	color: #0d6efd;
+	margin-bottom: 20px;
+}
+.prf-link-card span {
+	color: #000!important;
+}
+.prf-link-card i,
+.prf-link-card span {
+	font-size: 30px;
+	display: block;
 }
 
 .login {
@@ -328,6 +361,15 @@ hr {
 	padding: 40px 20px;
 	border-radius: 10px;
 	box-shadow: 0 0 20px 1px #c2c2c2;
+}
+.login .login-card #message {
+	display: none;
+	padding: 5px 10px;
+    margin-bottom: 15px;
+    background: #ffcccc;
+    border-radius: 10px;
+    border: 2px solid #ff6666;
+    color: #e60000;
 }
 .login .login-card .btn {
 	background: #E6E6E6;
@@ -538,6 +580,64 @@ hr {
 }
 .game-not-found img {
 	width: 200px;
+}
+
+.checkout-cnt {
+	padding: 5% 0;
+}
+.checkout-cnt .card-game {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	padding: 15px;
+}
+.checkout-cnt .card-game img {
+	display: block;
+	height: 150px;
+}
+.checkout-cnt .card-game .info {
+	display: block;
+	padding: 10px;
+}
+.checkout-cnt .card-game .info span {
+	display: block;
+}
+.checkout-cnt .card-game .info .title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.checkout-cnt .card-game .info .price {
+	font-size: 18px;
+	font-weight: 600;
+}
+.checkout-cnt .form-check {
+	margin: 10px 0;
+}
+.checkout-cnt button {
+	display: block;
+	margin: 20px auto 0 auto;
+	width: 50%;
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	border-radius: 10px;
+	color: #FFF;
+	padding: 15px 0;
+}
+.checkout-cnt .buy-product {
+	background: #77C66E;
+}
+.checkout-cnt .buy-product:hover {
+	background: #53b847;
+}
+.checkout-cnt .cancel-product {
+	background: #ff6666;
+}
+.checkout-cnt .cancel-product:hover {
+	background: #ff3333;
 }
 
 footer {
