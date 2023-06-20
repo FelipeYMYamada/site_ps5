@@ -22,9 +22,6 @@
         <li class="nav-item">
           <a class="nav-link" href="games.php">Jogos</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Produtos</a>
-        </li>
         <li class="nav-item">
           <?php 
             if (session_status() == PHP_SESSION_NONE) {

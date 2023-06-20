@@ -61,19 +61,19 @@
 				<div class="menu">
 					<ul>
 						<li>
+							<a href="profile.php">
+								<i class="fa-solid fa-user"></i>
+								<span>Meu Perfil</span>
+							</a>
+						</li>
+						<li>
 							<a href="?link=jogos">
 								<i class="fa-solid fa-gamepad"></i>
 								<span>Jogos</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
-								<i class="fa-solid fa-cart-shopping"></i>
-								<span>Compras</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
+							<a href="?link=hist">
 								<i class="fa-solid fa-clock-rotate-left"></i>
 								<span>Historico</span>
 							</a>

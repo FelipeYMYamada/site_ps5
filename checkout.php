@@ -23,27 +23,35 @@
 		<div class="container">
 			<h1>Finalizar Compra</h1>
 			<div id="game-info"></div>
-			<form>
-				<label for="card-full-name">Nome Completo:</label>
-				<input id="card-full-name" type="text" name="card-full-name" class="form-control">
+			<form id="checkout-form">
+				<div class="form-group">
+					<label for="card_full_name">Nome Completo:</label>
+					<input id="card_full_name" type="number" name="card_full_name" class="form-control" maxlength="120" required>
+				</div><!-- /.form-group -->
 
-				<label for="card-number">Número do cartão:</label>
-				<input id="card-number" type="number" name="card-number" class="form-control">
+				<div class="form-group">
+					<label for="card_number">Número do cartão:</label>
+					<input id="card_number" type="number" name="card_number" class="form-control" maxlength="50" required>
+				</div><!-- /.form-group -->
 				
 				<div class="row">
 					<div class="col-sx-12 col-md-3">
-						<label for="card-expiration">Validade:</label>
-						<input id="card-expiration" type="text" name="card-expiration" class="form-control">
+						<div class="form-group">
+							<label for="card_expiration">Validade:</label>
+							<input id="card_expiration" type="text" onkeypress="return isNumber(event)" name="card_expiration" class="form-control" placeholder="00/00" maxlength="5" required>
+						</div><!-- /.form-group -->
 					</div>
 					<div class="col-sx-12 col-md-2">
-						<label for="card-cvc">CVC:</label>
-						<input id="card-cvc" type="text" name="card-cvc" class="form-control">
+						<div class="form-group">
+							<label for="card_cvc">CVC:</label>
+							<input id="card_cvc" type="text" onkeypress="return isNumber(event)" name="card_cvc" class="form-control" placeholder="000" maxlength="3" required>
+						</div><!-- /.form-group -->
 					</div>
 				</div><!-- /.row -->
 
 				<div class="form-check">
-				  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-				  <label class="form-check-label" for="flexCheckDefault">
+				  <input id="card_save_info" name="card_save_info" class="form-check-input" type="checkbox">
+				  <label class="form-check-label" for="card_save_info">
 				    Salvar informações
 				  </label>
 				</div>

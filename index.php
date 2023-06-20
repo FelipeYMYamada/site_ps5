@@ -28,7 +28,6 @@
     <div class="content">
       <h1>PLAY HAS NO LIMITS</h1>
       <h2>GARANTA JA O SEU</h2>
-      <button>Comprar</button>
     </div><!-- /.content -->
   </div><!-- /.home -->
 

@@ -20,7 +20,7 @@ $(document).ready(function () {
             var email = $('#email').val();
             var phone_number = $('#phonenumber').val();
             var password = $('#password_inp').val();
-            var password2 = $('#password2_inp').val();        
+            var password2 = $('#password2_inp').val();
         
             if(password != password2) {
                 $('#message').css('display', 'block').text('Senha diferente!');

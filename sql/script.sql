@@ -48,3 +48,27 @@ CREATE TABLE games_category(
 );
 
 INSERT INTO games_category(game_id, category_id) VALUES(1,3),(2,2),(3,4),(4,1),(2,1),(3,1);
+
+CREATE TABLE user_card (
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cd_name varchar(120) NOT NULL,
+    cd_number varchar(50) NOT NULL,
+    cd_exp varchar(300) NOT NULL,
+    cd_cvc varchar(3) NOT NULL,
+    updated_date datetime NOT NULL,
+    save_info tinyint(1) DEFAULT FALSE,
+    user_id int NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);
+
+CREATE TABLE hist_checkout(
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    game_id int DEFAULT NULL,
+    price decimal(18,2) NOT NULL,
+    user_card_id int NOT NULL,
+    updated_date datetime NOT NULL,
+	user_id int NOT NULL,
+    FOREIGN KEY(game_id) REFERENCES games(id),
+    FOREIGN KEY(user_card_id) REFERENCES user_card(id),
+    FOREIGN KEY(user_id) REFERENCES user(id)
+);
